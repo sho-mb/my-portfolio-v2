@@ -4,3 +4,8 @@ export type MenuItem = {
   title: string,
   path: string
 }
+
+export type SnsIcons = {
+  name: string,
+  link: string,
+}

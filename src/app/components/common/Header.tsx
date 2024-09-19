@@ -23,8 +23,8 @@ export const Header = () => {
   ];
 
   return (
-    <header className="py-[40px] relative flex items-center ">
-      <h1 className="text-2xl">SHO DEVELOPER</h1>
+    <header className="py-[28px] relative flex items-center ">
+      <h1 className="text-xl">SHO DEVELOPER</h1>
       <HamburgerMenu menuItems={menuItems} />
     </header>
   );

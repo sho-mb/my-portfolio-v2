@@ -15,20 +15,20 @@ export const HamburgerMenu = ({ menuItems }: { menuItems: MenuItem[] }) => {
   return (
     <>
       <button
-        className={`w-[62px] h-[62px] border border-solid rounded-full absolute top-6 right-3 z-20 ${
+        className={`w-[52px] h-[52px] border border-solid rounded-full absolute top-4 right-3 z-20 ${
           isMenuOpen ? "border-black" : "border-white"
         }`}
         onClick={handleClick}
       >
         <span
-          className={`w-6 block absolute left-[18px] top-[24px] border-1 border-solid transition-transform ${
+          className={`w-7 block absolute left-[11px] top-[19px] border-1 border-solid transition-transform ${
             isMenuOpen
               ? "translate-y-[5px] -rotate-45 origin-center border-black"
               : "border-white"
           }`}
         />
         <span
-          className={`w-6 block absolute left-[18px] bottom-[24px] border-1 border-solid transition-transform ${
+          className={`w-7 block absolute left-[11px] bottom-[19px] border-1 border-solid transition-transform ${
             isMenuOpen
               ? "-translate-y-[5px] rotate-45 origin-center border-black"
               : "border-white"
