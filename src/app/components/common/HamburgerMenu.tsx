@@ -15,7 +15,7 @@ export const HamburgerMenu = ({ menuItems }: { menuItems: MenuItem[] }) => {
   return (
     <>
       <button
-        className={`w-[52px] h-[52px] border border-solid rounded-full absolute top-4 right-3 z-20 ${
+        className={`w-[52px] h-[52px] border border-solid rounded-full absolute top-4 right-3 z-[99] ${
           isMenuOpen ? "border-black" : "border-white"
         }`}
         onClick={handleClick}
@@ -36,7 +36,7 @@ export const HamburgerMenu = ({ menuItems }: { menuItems: MenuItem[] }) => {
         />
       </button>
       <nav
-        className={`w-[320px] bg-white p-8 rounded-b-2xl absolute right-0 -top-[300px] z-0 transiton duration-700 ease-in-out ${
+        className={`w-[320px] bg-white p-8 rounded-b-2xl absolute right-0 -top-[300px] z-[89] transiton duration-700 ease-in-out ${
           isMenuOpen ? "opacity-100 translate-y-[300px] " : "opacity-0"
         }`}
       >

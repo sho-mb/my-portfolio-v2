@@ -3,6 +3,7 @@ import "./globals.css";
 import { roboto_Flex } from "./font";
 import { Header } from "./components/common/Header";
 import { NextUIProvider } from "@nextui-org/react";
+import SmoothScrolling from "./components/common/SmoothScrolling";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +21,9 @@ export default function RootLayout({
         <div className="container m-auto">
           <Header />
         </div>
-        <NextUIProvider>{children}</NextUIProvider>
+        <NextUIProvider>
+          <SmoothScrolling>{children}</SmoothScrolling>
+        </NextUIProvider>
       </body>
     </html>
   );
