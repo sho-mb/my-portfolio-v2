@@ -9,7 +9,11 @@ function SmoothScrolling({
   return (
     <ReactLenis
       root
-      options={{ lerp: 0.1, duration: 1.5, touchInertiaMultiplier: 30 }}
+      options={{
+        lerp: 1,
+        duration: 1.5,
+        easing: (t) => 1 - Math.pow(1 - t, 4),
+      }}
     >
       {children}
     </ReactLenis>

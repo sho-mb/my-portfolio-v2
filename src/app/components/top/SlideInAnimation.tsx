@@ -27,7 +27,6 @@ export const SlideInAnimation = () => {
         start: "bottom bottom",
         end: "+=300",
         scrub: true,
-        markers: true,
       });
 
       const tl = gsap.timeline();
@@ -60,7 +59,6 @@ export const SlideInAnimation = () => {
         start: "bottom -20%",
         end: "+=120%",
         scrub: true,
-        markers: true,
       });
     },
     { scope: container }
@@ -81,7 +79,7 @@ export const SlideInAnimation = () => {
         <div
           className={`${bebas_text.className} text-black lg:text-[300px] md:text-[80px] sm:text-[150px] tracking-tighter helloTwo opacity-100 absolute left-1/2 translate-x-[-50%] w-full h-fit bottom-0`}
         >
-          HELLOW WORLD
+          HELLO WORLD
         </div>
         <div
           className={`${crimson_text.className} text-white text-[100px] helloOne  opacity-100 absolute left-1/2 translate-x-[-50%] w-full h-fit bottom-0`}

@@ -3,7 +3,7 @@ import React from "react";
 export const AboutMeText = () => {
   return (
     <div>
-      <div className="text-black">
+      <div className="text-black md:text-xl">
         <p>
           I’m working as{" "}
           <span className="text-red-500">frontend developer and</span>
@@ -11,6 +11,10 @@ export const AboutMeText = () => {
         <p>
           <span className="text-red-500">web designer</span> based{" "}
           <span className="text-red-500">in Cambodia.</span>
+        </p>
+        <p>
+          My position in my company is Web developer working
+          <br /> with both front and backend
         </p>
         <p>
           <span className="text-red-500">Over 2 years </span>of experience.{" "}

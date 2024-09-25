@@ -7,43 +7,46 @@ import { SnsIcons } from "../ui/SnsIcons";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-import { MatrixAnimation } from "../ui/MatrixAnimation";
+import { AnimationButton } from "../ui/AnimationButton";
 
 export const AboutMe = () => {
   const container = useRef(null);
 
-  // gsap.registerPlugin(useGSAP, ScrollTrigger);
-  // useGSAP(
-  //   () => {
-  //     const tl = gsap.timeline();
-  //     tl.from(".first", { yPercent: -100 });
-  //     // tl.from(".second", { yPercent: 100 });
-  //     ScrollTrigger.create({
-  //       animation: tl,
-  //       trigger: "#hero",
-  //       start: "top top",
-  //       end: "+=4000",
-  //       scrub: true,
-  //       pin: true,
-  //       anticipatePin: 1,
-  //     });
-  //   },
-  //   { scope: container }
-  // );
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
+  useGSAP(
+    () => {
+      const tl = gsap.timeline();
+
+      tl.from(".profilePicture", {
+        opacity: 0,
+        yPercent: 10,
+        duration: 5,
+      });
+
+      ScrollTrigger.create({
+        animation: tl,
+        trigger: "#aboutMe",
+        start: "top center",
+        end: "+=200",
+        scrub: true,
+      });
+    },
+    { scope: container }
+  );
 
   return (
     <div className="w-full h-screen" ref={container}>
-      {/* <section className="absolute w-full h-screen matrix z-20">
-        <MatrixAnimation />
-      </section> */}
       <section className="second w-full h-full bg-white" id="aboutMe">
-        <div className="container m-auto flex flex-row gap-20 justify-center items-center">
-          <div className="">
+        <div className="container m-auto flex flex-row gap-40 justify-center items-center">
+          <div className="profilePicture">
             <MyProfilePicture />
           </div>
           <div className="flex flex-col gap-4">
             <AboutMeText />
             <SnsIcons />
+            <div className="mt-8">
+              <AnimationButton title="More about me" path="/about" />
+            </div>
           </div>
         </div>
       </section>
