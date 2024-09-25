@@ -18,9 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto_Flex.className}`}>
-        <div className="container m-auto">
-          <Header />
-        </div>
+        <Header />
         <NextUIProvider>
           <SmoothScrolling>{children}</SmoothScrolling>
         </NextUIProvider>

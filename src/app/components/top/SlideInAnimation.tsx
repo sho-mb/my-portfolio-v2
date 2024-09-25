@@ -7,7 +7,7 @@ import { LightSwitch } from "../ui/LightSwitch";
 import TextPlugin from "gsap/TextPlugin";
 
 export const SlideInAnimation = () => {
-  const container = useRef(null);
+  const slideContainer = useRef(null);
 
   gsap.registerPlugin(useGSAP, ScrollTrigger, TextPlugin);
 
@@ -24,7 +24,7 @@ export const SlideInAnimation = () => {
       ScrollTrigger.create({
         animation: secondTl,
         trigger: "#slideIn",
-        start: "bottom bottom",
+        start: "center center",
         end: "+=300",
         scrub: true,
       });
@@ -50,24 +50,25 @@ export const SlideInAnimation = () => {
       tl.from(".helloTwo", {
         opacity: 0,
         y: 100,
-        duration: 2,
+        duration: 5,
       });
 
       ScrollTrigger.create({
         animation: tl,
         trigger: "#slideIn",
-        start: "bottom -20%",
-        end: "+=120%",
+        start: "90% center",
+        end: "+=100%",
         scrub: true,
+        markers: true,
       });
     },
-    { scope: container }
+    { scope: slideContainer }
   );
 
   return (
     <section
       id="slideIn"
-      ref={container}
+      ref={slideContainer}
       className="relative h-full w-full text-center"
     >
       <div className="bg-black h-full w-full absolute top-0 background">

@@ -23,9 +23,11 @@ export const Header = () => {
   ];
 
   return (
-    <header className="py-[28px] relative flex items-center">
-      <h1 className="text-xl">SHO DEVELOPER</h1>
-      <HamburgerMenu menuItems={menuItems} />
+    <header className="py-[28px] flex items-center bg-black">
+      <div className="container m-auto relative">
+        <h1 className="text-xl">SHO DEVELOPER</h1>
+        <HamburgerMenu menuItems={menuItems} />
+      </div>
     </header>
   );
 };

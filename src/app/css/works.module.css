@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+}
+
+.text {
+  font-size: clamp(8rem, 15vw, 16rem);
+  line-height: 1;
+  font-weight: 900;
+}

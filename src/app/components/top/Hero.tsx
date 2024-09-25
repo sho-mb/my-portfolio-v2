@@ -94,9 +94,12 @@ export const Hero = () => {
 
   return (
     <section id="hero">
-      <div className="bg-black relative h-screen w-full overflow-hidden">
+      <div className="bg-black relative h-screen w-full overflow-hidden ">
         <div className="text-center flex flex-col justify-center items-center absolute z-10 top-1/3 left-1/2 translate-x-[-50%] ">
-          <h1 id="HeroTitle" className={`${crimson_text.className} text-7xl`}>
+          <h1
+            id="HeroTitle"
+            className={`${crimson_text.className} text-7xl text-white`}
+          >
             THIS IS
           </h1>
           <div className="mt-4">
