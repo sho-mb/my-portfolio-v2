@@ -12,8 +12,10 @@ import portfolio3 from "@/assets/img/portfolio3.png";
 import portfolio4 from "@/assets/img/portfolio4.jpg";
 import portfolio5 from "@/assets/img/portfoli5.png";
 import portfolio6 from "@/assets/img/portfolio6.png";
+import portfolio7 from "@/assets/img/portfolio7.png";
 import Link from "next/link";
 import { AnimationButton } from "../ui/AnimationButton";
+import { crimson_text } from "@/app/font";
 
 export const Works = () => {
   const worksContainer = useRef(null);
@@ -44,6 +46,10 @@ export const Works = () => {
     {
       src: portfolio6,
       link: "/portfolio/6",
+    },
+    {
+      src: portfolio7,
+      link: "/portfolio/7",
     },
   ];
 
@@ -88,10 +94,12 @@ export const Works = () => {
   return (
     <div
       ref={worksContainer}
-      className="h-[2000px] overflow-x-hidden flex flex-col gap-4"
+      className="h-full overflow-x-hidden flex flex-col gap-4"
     >
       <section>
-        <div className={`wrapper ${works.wrapper} ${works.text}`}>
+        <div
+          className={`${crimson_text.className} wrapper ${works.wrapper} ${works.text}`}
+        >
           WORKPORTFOLIOWORKPORTFOLIO
         </div>
       </section>
@@ -124,7 +132,9 @@ export const Works = () => {
         </div>
       </section>
       <section>
-        <div className={`wrapper ${works.wrapper} ${works.text}`}>
+        <div
+          className={`${crimson_text.className} wrapper ${works.wrapper} ${works.text}`}
+        >
           WORKPORTFOLIOWORKPORTFOLIO
         </div>
       </section>
