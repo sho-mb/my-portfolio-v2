@@ -10,3 +10,26 @@ export const tools = [
     skills : ['Figma', 'Photoshop', 'Illustrator', 'Procreate', 'Canva', 'My creativity']
   }
 ]
+
+export const solutions = [
+  {
+  titie: 'Unique animations and design',
+  color: 'rgb(252 165 165)',
+  icon: '🎨'
+  },
+  {
+    titie: 'Easy and good communication',
+    color: '#93c5fd',
+    icon: '📞'
+  },
+  {
+    titie: 'Good quality and on time delivery',
+    color: '#86efac',
+    icon : '🚀'
+  },
+  {
+    titie: 'Good price and good service',
+    color: '#fde047',
+    icon: '💰'
+  }
+ ];

@@ -56,7 +56,7 @@ export const SlideInAnimation = () => {
       ScrollTrigger.create({
         animation: tl,
         trigger: "#slideIn",
-        start: "90% center",
+        start: "70% center",
         end: "+=100%",
         scrub: true,
         markers: true,

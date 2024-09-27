@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { HamburgerMenu } from "./HamburgerMenu";
+import Link from "next/link";
 
 export const Header = () => {
   const menuItems = [
@@ -25,7 +26,9 @@ export const Header = () => {
   return (
     <header className="py-[28px] flex items-center bg-black">
       <div className="container m-auto relative">
-        <h1 className="text-xl">SHO DEVELOPER</h1>
+        <Link href={"/"}>
+          <h1 className="text-xl">SHO DEVELOPER</h1>
+        </Link>
         <HamburgerMenu menuItems={menuItems} />
       </div>
     </header>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import myImage from "@/assets/img/Me.jpg";
+import myImage from "@/assets/img/me.jpg";
 import RoundText from "@/assets/img/roundedText.png";
 
 export const MyProfilePicture = () => {

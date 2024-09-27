@@ -30,7 +30,7 @@ export const LightSwitch = () => {
       ScrollTrigger.create({
         animation: tl,
         trigger: "#slideIn",
-        start: "70% top",
+        start: "55% top",
         end: "+=100%",
         scrub: true,
         markers: true,
