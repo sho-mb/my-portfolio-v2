@@ -8,23 +8,12 @@ export const Footer = () => {
           <small>2024 © Edition</small>
         </div>
         <div>
-          <small>Social</small>
+          <small>Menu</small>
           <div className="flex justify-center gap-4">
-            <a href="https://x.com/kisho_art_" target="_blank">
-              X
-            </a>
-            <a href="www.linkedin.com/in/sho-developer" target="_blank">
-              LinkedIn
-            </a>
-            <a href="https://www.facebook.com/kisho.tamura.5" target="_blank">
-              Facebook
-            </a>
-            <a href="https://github.com/xoxkishoxox" target="_blank">
-              Github
-            </a>
-            <a href="https://note.com/cambo/" target="_blank">
-              Note
-            </a>
+            <a href="/">Top</a>
+            <a href="/about">About</a>
+            <a href="/works">Works</a>
+            <a href="/contact">Contact</a>
           </div>
         </div>
       </footer>

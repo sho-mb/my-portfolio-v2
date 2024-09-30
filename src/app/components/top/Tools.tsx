@@ -41,7 +41,7 @@ export const Tools = () => {
           delay: index % 2 === 0 ? 1 : 0.5,
           scrollTrigger: {
             trigger: toolContainer.current,
-            start: "top center",
+            start: "top bottom",
             end: "+=100",
           },
         });

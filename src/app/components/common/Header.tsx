@@ -1,9 +1,29 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { HamburgerMenu } from "./HamburgerMenu";
 import Link from "next/link";
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  const handleClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
   const menuItems = [
     {
       title: "HOME",
@@ -15,7 +35,7 @@ export const Header = () => {
     },
     {
       title: "WORKS",
-      path: "/works",
+      path: "/portfolio",
     },
     {
       title: "CONTACT",
@@ -29,7 +49,13 @@ export const Header = () => {
         <Link href={"/"}>
           <h1 className="text-xl">SHO DEVELOPER</h1>
         </Link>
-        <HamburgerMenu menuItems={menuItems} />
+        <div ref={menuRef}>
+          <HamburgerMenu
+            menuItems={menuItems}
+            isMenuOpen={isMenuOpen}
+            handleClick={handleClick}
+          />
+        </div>
       </div>
     </header>
   );

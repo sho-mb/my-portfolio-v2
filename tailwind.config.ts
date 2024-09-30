@@ -13,6 +13,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'white': '#F7F7F7'
       },
       animation: {
         'spin-slow': 'spin 10s linear infinite',

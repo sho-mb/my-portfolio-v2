@@ -3,15 +3,16 @@
 import { crimson_text } from "@/app/font";
 import { MenuItem } from "@/const/types";
 import Link from "next/link";
-import { useState } from "react";
 
-export const HamburgerMenu = ({ menuItems }: { menuItems: MenuItem[] }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
+export const HamburgerMenu = ({
+  menuItems,
+  isMenuOpen,
+  handleClick,
+}: {
+  menuItems: MenuItem[];
+  isMenuOpen: boolean;
+  handleClick: () => void;
+}) => {
   return (
     <>
       <button
