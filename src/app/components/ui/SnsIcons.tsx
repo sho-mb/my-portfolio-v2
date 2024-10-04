@@ -28,7 +28,6 @@ export const SnsIcons = () => {
         start: "top center",
         end: "+=200",
         scrub: true,
-        markers: true,
       },
     });
   });

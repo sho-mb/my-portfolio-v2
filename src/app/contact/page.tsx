@@ -5,7 +5,9 @@ import { WorkWith } from "../components/top/WorkWith";
 export default function page() {
   return (
     <div>
-      <WorkWith />
+      <div className="mb-6">
+        <WorkWith />
+      </div>
       <Contact />
     </div>
   );

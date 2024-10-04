@@ -59,7 +59,6 @@ export const SlideInAnimation = () => {
         start: "70% center",
         end: "+=100%",
         scrub: true,
-        markers: true,
       });
     },
     { scope: slideContainer }
@@ -67,8 +66,8 @@ export const SlideInAnimation = () => {
 
   return (
     <section
-      id="slideIn"
       ref={slideContainer}
+      id="slideIn"
       className="relative h-full w-full text-center"
     >
       <div className="bg-black h-full w-full absolute top-0 background">

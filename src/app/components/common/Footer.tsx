@@ -12,7 +12,7 @@ export const Footer = () => {
           <div className="flex justify-center gap-4">
             <a href="/">Top</a>
             <a href="/about">About</a>
-            <a href="/works">Works</a>
+            <a href="/portfolio">Works</a>
             <a href="/contact">Contact</a>
           </div>
         </div>

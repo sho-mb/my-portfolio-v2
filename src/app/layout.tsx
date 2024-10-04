@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { roboto_Flex } from "./font";
 import { Header } from "./components/common/Header";
-import { NextUIProvider } from "@nextui-org/react";
+// import { NextUIProvider } from "@nextui-org/react";
 import SmoothScrolling from "./components/common/SmoothScrolling";
 import { Footer } from "./components/common/Footer";
 
@@ -20,9 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto_Flex.className}`}>
         <Header />
-        <NextUIProvider>
-          <SmoothScrolling>{children}</SmoothScrolling>
-        </NextUIProvider>
+        <SmoothScrolling>{children}</SmoothScrolling>
         <Footer />
       </body>
     </html>

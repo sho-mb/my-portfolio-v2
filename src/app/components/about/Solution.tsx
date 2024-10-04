@@ -24,7 +24,6 @@ export const Solution = () => {
             trigger: solutionContainer.current,
             start: "top center",
             end: "+=200",
-            markers: true,
           },
         });
       });
