@@ -51,7 +51,10 @@ export const Tools = () => {
   );
 
   return (
-    <section ref={toolContainer} className="container m-auto h-full pb-40">
+    <section
+      ref={toolContainer}
+      className="container m-auto h-full md:pb-40 pb-20"
+    >
       <div
         className={`${crimson_text.className} flex text-[100px] font-extrabold`}
       >
@@ -61,7 +64,7 @@ export const Tools = () => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-2">
+      <div className="grid md:grid-cols-2 ">
         {tools.map((deta) => (
           <div key={deta.id}>
             <div className="flex gap-4 mt-8">

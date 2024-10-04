@@ -13,7 +13,7 @@ export const WorkWithMe = () => {
         alt="Background picture of asking work with me"
       />
       <div
-        className={`uppercase text-center absolute w-full top-1/2 text-white font-bold text-[80px] left-1/2 translate-x-[-50%] translate-y-[-50%] ${crimson_text.className}`}
+        className={`uppercase text-center absolute w-full top-1/2 text-white font-bold lg:text-[80px] md:text-[60px] text-[32px] left-1/2 translate-x-[-50%] translate-y-[-50%] ${crimson_text.className}`}
       >
         Let’s collaborate
         <br /> to create <br />

@@ -29,7 +29,7 @@ export const Hero = () => {
   return (
     <section ref={heroContainer}>
       <div
-        className={`heroText ${bebas_text.className} text-[200px] flex justify-center`}
+        className={`heroText ${bebas_text.className} md:text-[200px] text-[80px] flex justify-center`}
       >
         {splitText.map((t, index) => (
           <div key={index} className="splitText">

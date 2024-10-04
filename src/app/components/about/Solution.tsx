@@ -13,7 +13,6 @@ export const Solution = () => {
   useGSAP(
     () => {
       const cards = gsap.utils.toArray(".cardItem") as HTMLElement[];
-      console.log(cards);
       cards.forEach((card, index) => {
         gsap.from(card, {
           y: 20,
@@ -37,14 +36,14 @@ export const Solution = () => {
         What I can bring to you
       </div>
       <div>
-        <ul className="grid grid-cols-4 gap-4">
+        <ul className="grid md:grid-cols-4 grid-cols-2 gap-4">
           {solutions.map((solution, index) => (
             <li
               key={index}
-              className={`cardItem w-full h-[400px] border-2 border-black rounded-2xl font-bold text-xl justify-between flex flex-col p-4`}
+              className={`cardItem w-full md:h-[400px] h-[200px] border-2 border-black rounded-2xl font-bold text-xl justify-between flex flex-col p-4`}
               style={{ backgroundColor: solution.color }}
             >
-              <div className="text-center text-[100px] h-full flex justify-center items-center">
+              <div className="text-center md:text-[100px] text-[50px] h-full flex justify-center items-center">
                 {solution.icon}
               </div>
               <div className={`justify-end`}>{solution.titie}</div>

@@ -28,11 +28,11 @@ export const PortfolioDetails = ({
   ];
   return (
     <div>
-      <div className="flex gap-16">
-        <div className="w-[50%]">
+      <div className="flex lg:flex-row flex-col lg:gap-16 gap-4">
+        <div className="lg:w-[50%]">
           <Image src={images[Number(id) - 1]} alt="portfolio" />
         </div>
-        <div className="flex flex-col gap-8 w-[40%]">
+        <div className="flex flex-col gap-8 lg:w-[40%]">
           <div className="flex flex-col gap-4">
             <div className="px-3 py-1 bg-red-500 w-fit h-fit rounded-full text-sm">
               <p className="font-bold  text-white stroke-black stroke-1">

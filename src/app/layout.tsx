@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { roboto_Flex } from "./font";
 import { Header } from "./components/common/Header";
-// import { NextUIProvider } from "@nextui-org/react";
 import SmoothScrolling from "./components/common/SmoothScrolling";
 import { Footer } from "./components/common/Footer";
 

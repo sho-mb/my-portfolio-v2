@@ -25,7 +25,7 @@ export const OtherPotfolio = () => {
       <div className="text-2xl font-bold text-center py-8">
         Check other projects
       </div>
-      <div className="grid grid-cols-5 gap-4 w-2/3 m-auto">
+      <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-4 md:w-2/3 m-auto">
         {images.map((image, index) => (
           <Link key={index} href={`/portfolio/${index + 1}`}>
             <Image src={image} alt="portfolio" />
@@ -34,7 +34,7 @@ export const OtherPotfolio = () => {
       </div>
       <div className="pb-5">
         <Link href="/portfolio">
-          <div className="text-white border border-solid text-xl font-semibold px-6 w-fit py-3 m-auto mt-8 rounded-full bg-red-500">
+          <div className="text-white border border-solid lg:text-xl text-md font-semibold px-6 w-fit py-3 m-auto mt-8 rounded-full bg-red-500">
             All projects
           </div>
         </Link>
