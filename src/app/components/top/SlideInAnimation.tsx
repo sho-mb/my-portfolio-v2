@@ -73,16 +73,18 @@ export const SlideInAnimation = () => {
       <div className="bg-black h-full w-full absolute top-0 background">
         <div className="absolute left-1/2 translate-x-[-50%] top-1/3 flex flex-col gap-4 justify-center items-center">
           <LightSwitch />
-          <div className="text-5xl text-white switchText">Oups! too dark!</div>
+          <div className="md:text-5xl text-3xl text-white switchText">
+            Oups! too dark!
+          </div>
         </div>
 
         <div
-          className={`${bebas_text.className} text-black lg:text-[300px] md:text-[80px] sm:text-[150px] tracking-tighter helloTwo opacity-100 absolute left-1/2 translate-x-[-50%] w-full h-fit bottom-0`}
+          className={`${bebas_text.className} text-black lg:text-[300px] md:text-[220px] text-[100px] tracking-tighter helloTwo opacity-100 absolute left-1/2 translate-x-[-50%] w-full h-fit bottom-0`}
         >
           HELLO WORLD
         </div>
         <div
-          className={`${crimson_text.className} text-white text-[100px] helloOne  opacity-100 absolute left-1/2 translate-x-[-50%] w-full h-fit bottom-0`}
+          className={`${crimson_text.className} text-white lg:text-[100px] md:text-[80px] md:leading-[80px] text-4xl helloOne opacity-100 absolute left-1/2 translate-x-[-50%] w-full h-fit bottom-1/3`}
         >
           We all start from here
         </div>

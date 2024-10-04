@@ -53,14 +53,32 @@ export const Works = () => {
     },
   ];
 
+  const portfolios3 = [
+    {
+      src: portfolio1,
+      link: "/portfolio/1",
+    },
+    {
+      src: portfolio2,
+      link: "/portfolio/2",
+    },
+    {
+      src: portfolio3,
+      link: "/portfolio/3",
+    },
+  ];
+
   const [imgWidth, setImgWidth] = useState(0);
 
   useEffect(() => {
-    const handleSize = () => {
+    const handleResize = () => {
+      const outerWidth = window.outerWidth;
       const width = window.innerWidth;
-      setImgWidth(width / 3);
+      const imgWidth = outerWidth < 820 ? width : width / 3;
+      setImgWidth(imgWidth);
     };
-    handleSize();
+
+    handleResize();
   }, []);
 
   useGSAP(
@@ -94,16 +112,16 @@ export const Works = () => {
   return (
     <div
       ref={worksContainer}
-      className="h-full overflow-x-hidden flex flex-col gap-4"
+      className="h-full overflow-x-hidden flex flex-col lg:gap-4 md:gap-2 gap-1"
     >
       <section>
         <div
-          className={`${crimson_text.className} wrapper ${works.wrapper} ${works.text}`}
+          className={`${crimson_text.className} wrapper ${works.wrapper} text-[80px] md:text-[100px] lg:text-[150px] font-extrabold`}
         >
           WORKPORTFOLIOWORKPORTFOLIO
         </div>
       </section>
-      <section>
+      <section className="hidden lg:block">
         <div className={`wrapper ${works.wrapper} gap-5`}>
           {portfolios1.map((portfolio, index) => (
             <Link key={index} href={portfolio.link}>
@@ -117,7 +135,7 @@ export const Works = () => {
           ))}
         </div>
       </section>
-      <section>
+      <section className="hidden lg:block">
         <div className={`wrapper ${works.wrapper} gap-5`}>
           {portfolios2.map((portfolio, index) => (
             <Link key={index} href={portfolio.link}>
@@ -131,9 +149,23 @@ export const Works = () => {
           ))}
         </div>
       </section>
+      <div className="lg:hidden block">
+        <div className={`wrapper ${works.wrapper} md:gap-2 gap-1`}>
+          {portfolios3.map((portfolio, index) => (
+            <Link key={index} href={portfolio.link}>
+              <Image
+                src={portfolio.src}
+                width={imgWidth}
+                height={imgWidth}
+                alt="portfolio image"
+              />
+            </Link>
+          ))}
+        </div>
+      </div>
       <section>
         <div
-          className={`${crimson_text.className} wrapper ${works.wrapper} ${works.text}`}
+          className={`${crimson_text.className} wrapper ${works.wrapper} text-[80px] md:text-[100px] lg:text-[150px] font-extrabold`}
         >
           WORKPORTFOLIOWORKPORTFOLIO
         </div>

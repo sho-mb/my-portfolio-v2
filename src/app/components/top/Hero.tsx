@@ -98,7 +98,7 @@ export const Hero = () => {
         <div className="text-center flex flex-col justify-center items-center absolute z-10 top-1/3 left-1/2 translate-x-[-50%] ">
           <h1
             id="HeroTitle"
-            className={`${crimson_text.className} text-7xl text-white`}
+            className={`${crimson_text.className} lg:text-8xl md:text-6xl text-4xl text-white`}
           >
             THIS IS
           </h1>

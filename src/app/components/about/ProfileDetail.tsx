@@ -5,8 +5,8 @@ import { BollAnimation } from "../ui/BollAnimation";
 
 export const ProfileDetail = () => {
   return (
-    <div className="grid grid-cols-7 gap-5">
-      <div className={`col-span-3 text-xl font-semibold `}>
+    <div className="md:grid md:grid-cols-7 flex flex-col gap-5">
+      <div className={`md:col-span-3 md:text-xl text-md font-semibold `}>
         I’m Frontend Developer and web designer specialize in web development
         and creation field. I love to create things.
         <br /> I had experience of backend a little So I can make backend in
@@ -18,13 +18,13 @@ export const ProfileDetail = () => {
         src={profile}
         alt="my profile picture"
         width={600}
-        className="rounded-2xl col-span-3 col-end-8"
+        className="rounded-2xl md:col-span-3 md:col-end-8"
       />
-      <div className="col-span-4">
+      <div className="col-span-4 md:block hidden">
         <BollAnimation />
       </div>
       <div
-        className={`text-right col-span-3 col-end-8 text-xl font-semibold mt-20 `}
+        className={`text-right col-span-3 col-end-8 md:text-xl text-md font-semibold md:mt-20 mt-8`}
       >
         I was born in Japan and moved to Cambodia Currently based in Cambodia,
         However I will move another country soon this year I think. Prefer to

@@ -7,11 +7,13 @@ import { SnsIconNoAnimation } from "../ui/SnsIconNoAnimation";
 export const Contact = () => {
   const email = "kisho.art.work@gmail.com";
   return (
-    <div className="text-center flex flex-col gap-4 pb-20">
-      <div className={`${crimson_text.className} font-bold text-[80px]`}>
+    <div className="text-center flex flex-col gap-4 md:pb-20 pb-10">
+      <div
+        className={`${crimson_text.className} font-bold md:text-[80px] text-[40px]`}
+      >
         Let&apos;s create togther
       </div>
-      <a href={`mailto:${email}`} className="text-4xl font-semibold">
+      <a href={`mailto:${email}`} className="md:text-4xl text-xl font-semibold">
         {email}
       </a>
       <div className="w-fit m-auto text-3xl font-semibold">

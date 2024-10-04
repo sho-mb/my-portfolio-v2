@@ -19,6 +19,11 @@ const config: Config = {
         'spin-slow': 'spin 10s linear infinite',
       }
     },
+    container: {
+      padding: {
+       DEFAULT: '1rem',
+      }
+    }
   },
     darkMode: "class",
   plugins: [nextui()],

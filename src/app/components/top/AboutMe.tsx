@@ -37,7 +37,7 @@ export const AboutMe = () => {
   return (
     <div className="w-full h-full" ref={container}>
       <section className="second w-full h-full" id="aboutMe">
-        <div className="container m-auto flex flex-row gap-40 justify-center items-center">
+        <div className="container m-auto flex md:flex-row flex-col lg:gap-40 md:gap-16 gap-4 justify-center items-center">
           <div className="profilePicture">
             <MyProfilePicture />
           </div>
